@@ -1,19 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world!</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <div><img src="Front-view-happy-woman-in-studio.png" alt="Hello World from Space"
-      style="width:100%;max-width:640px"></div>
-    <p>This is the first file in my new Git Repo.</p> 
-    <p>This line is here to show how merging works.</p>
-    <p>added this line.</p>
-    <div><img src="logo.png" alt="Hello Git" style="width:100%;max-width:640px"></div>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emmanuel Nwaohiri — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <p class="nav-brand">Emmanuel-Xs</p>
+    <ul class="nav-links">
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="terminal">
+      <div class="term-bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="term-title">emmanuel@portfolio: ~</span>
+      </div>
+      <div class="term-body">
+        <div class="term-line"><span class="prompt">emmanuel-xs@dev</span><span class="cmd"> ~ % whoami</span></div>
+        <div class="term-output">
+          <h1>Nwaohiri Emmanuel</h1>
+          <div class="role">Frontend Developer — React / TypeScript</div>
+          <p>I build fast, well-structured interfaces for products people actually use, from point-of-sale systems to invoicing tools. Based in Lagos, Nigeria. Currently working across client projects and independent builds, with a growing focus on AI-powered developer tooling.</p>
+        </div>
+        <div class="term-line"><span class="prompt">emmanuel-xs@dev</span><span class="cmd"> ~ % _</span><span class="cursor"></span></div>
+      </div>
+    </div>
+    <div class="btn-row">
+      <a href="Emmanuel_Nwaohiri_CV.pdf" class="btn btn-primary">↓ Download CV</a>
+      <a href="https://github.com/emmanuel-xs" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="#contact" class="btn btn-ghost">Contact</a>
+    </div>
+  </div>
+</header>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-label">stack</div>
+    <h2>Tools I build with</h2>
+    <ul class="chip-row">
+      <li class="chip">React</li>
+      <li class="chip">TypeScript</li>
+      <li class="chip">Vite</li>
+      <li class="chip">TanStack Router</li>
+      <li class="chip">TanStack Query</li>
+      <li class="chip">TanStack Start</li>
+      <li class="chip">Nextjs</li>
+      <li class="chip">Tailwind CSS</li>
+      <li class="chip">Zustand</li>
+      <li class="chip">shadcn/ui</li>
+      <li class="chip">Node.js</li>
+      <li class="chip">Git/Github</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-label">projects</div>
+    <h2>Selected work</h2>
+
+    <div class="project">
+      <div class="project-head">
+        <span class="project-name">01POS</span>
+        <span class="project-tag">client project</span>
+      </div>
+      <p>A React-based point-of-sale system for 01 Technologies. Built AI-powered features for the admin dashboard, including AI Insights and Restock Pro, alongside the product's AI feature landing page.</p>
+      <ul class="stack-row">
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>React Query</li>
+        <li>Laravel API</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <span class="project-name">Password Puzzle</span>
+        <span class="project-tag">personal project</span>
+      </div>
+      <p>A Mastermind-style browser game rebuilt from the ground up, with a six-tier difficulty system and full hint/feedback logic.</p>
+      <ul class="stack-row">
+        <li>Vite</li>
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>Zustand</li>
+        <li>Tailwind v4</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <span class="project-name">Invoiq</span>
+        <span class="project-tag">personal project</span>
+      </div>
+      <p>A full-stack invoice management app with form validation, persisted state, and a design system built from a Frontend Mentor Figma spec.</p>
+      <ul class="stack-row">
+        <li>TanStack Router</li>
+        <li>TanStack Form</li>
+        <li>Zod</li>
+        <li>Zustand</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <span class="project-name">IdeaVault</span>
+        <span class="project-tag">personal project</span>
+      </div>
+      <p>A personal idea management platform for capturing and organizing ideas, with authentication and a Postgres-backed data layer.</p>
+      <ul class="stack-row">
+        <li>TanStack Start</li>
+        <li>Better Auth</li>
+        <li>Drizzle ORM</li>
+        <li>Supabase</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <span class="project-name">DevLink</span>
+        <span class="project-tag">full-stack link aggregator</span>
+      </div>
+      <p>A web app for collating and sharing users' social media links in one place. <a href="https://github.com/Emmanuel-Xs/devlinks" target="_blank" rel="noopener" style="color:var(--teal); text-decoration:underline;">github.com/Emmanuel-Xs/devlinks</a></p>
+      <ul class="stack-row">
+        <li>Next.js</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-label">experience</div>
+    <h2>Where I've worked</h2>
+
+    <div class="exp-item">
+      <div class="when">2025 — 2026</div>
+      <div class="what">ICT Instructor, NYSC (SAED) — New Horizons Nigeria, Abeokuta</div>
+      <p>Taught corps members web development, web design, and AI-assisted design tools during orientation camp, including how to build a portfolio site and generate professional visuals with AI.</p>
+    </div>
+
+    <div class="exp-item">
+      <div class="when">Ongoing</div>
+      <div class="what">Frontend Developer — Client & Independent Projects</div>
+      <p>Building production interfaces for client products alongside a set of independent projects exploring modern React tooling and AI integration.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-label">contact</div>
+    <h2>Get in touch</h2>
+    <ul class="chip-row">
+      <li><a href="https://github.com/emmanuel-xs" class="chip" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://x.com/xs_emmanuel" class="chip" target="_blank" rel="noopener">X</a></li>
+      <li><a href="https://devlinks-abc.vercel.app/emmanuelxs" class="chip" target="_blank" rel="noopener">DevLinks</a></li>
+      <li><a href="mailto:emmanuelnwaohiri1@gmail.com" class="chip">Email</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>@Lagos, Nigeria.</p>
+  </div>
+</footer>
+
+</body>
 </html>
